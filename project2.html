@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditi Rawat | Portfolio</title>
+  <!-- Link to Google Fonts for modern typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* General Body Styling */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #87CEFA, #FFD700, #FFB6C1); /* Light blue, yellow, pink gradient */
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+      position: relative;
+      animation: fadeIn 1s ease-out; /* Fade-in effect for the body */
+    }
+
+    /* Header Styling */
+    header {
+      background-color: rgba(255, 182, 193, 0.8); /* Light pink with slight transparency */
+      color: white;
+      padding: 60px 0;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      position: relative;
+      z-index: 10;
+      animation: slideIn 1.5s ease-out; /* Slide-in animation for header */
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3.5rem;
+      font-weight: 600;
+    }
+
+    header h2 {
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+
+    /* Image Styling for Left and Right Corners */
+    .left-image, .right-image {
+      position: absolute;
+      top: 20%;
+      width: 180px; /* Larger size for a more impactful presence */
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      z-index: -1;
+    }
+
+    .left-image {
+      left: 20px;
+      background-image: url('https://tools.corenexis.com/image/cnxm/M24/12/607dc43df3.webp');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .right-image {
+      right: 20px;
+      background-image: url('https://tools.corenexis.com/image/cnxm/M24/12/8b5cb8362b.webp');
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Section Styling */
+    .section {
+      position: relative;
+      margin: 40px auto;
+      padding: 25px;
+      max-width: 900px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      animation: fadeUp 1s ease-out;
+    }
+
+    h3 {
+      color: #FF69B4; /* Hot pink */
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    /* Button Styling */
+    .btn {
+      padding: 10px 20px;
+      background-color: #FF69B4;
+      color: white;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .btn:hover {
+      background-color: #FF1493;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: rgba(255, 182, 193, 0.8);
+      color: white;
+      padding: 20px 0;
+      font-size: 1rem;
+    }
+
+    /* Contact Section */
+    .contact-info {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    .contact-info a {
+      color: #FF69B4;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-50px); }
+      to { transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Left Image -->
+  <div class="left-image"></div>
+
+  <!-- Right Image -->
+  <div class="right-image"></div>
+
+  <!-- Header -->
+  <header>
+    <h1>Aditi Rawat</h1>
+    <h2>BCA Student | Cyber Security Enthusiast | NGO Volunteer</h2>
+  </header>
+
+  <!-- About Section -->
+  <section class="section">
+    <h3>About Me</h3>
+    <p>
+      Hello! My name is <strong>Aditi Rawat</strong>, and I am a <strong>BCA student</strong> specializing in <strong>Cyber Security</strong>. I have a passion for ethical hacking, data protection, and secure software practices. I also enjoy creating beautiful <strong>front-end web designs</strong> and exploring innovative technology solutions.
+    </p>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section">
+    <h3>My Experience</h3>
+    <p>
+      I have volunteered with <strong>"Our Faith" NGO</strong>, focusing on animal welfare and community outreach initiatives. These experiences allowed me to make a meaningful impact while developing empathy and teamwork skills.
+    </p>
+    <p>
+      Additionally, I participated in online certification programs to expand my knowledge in <strong>cybersecurity</strong> and technology, preparing me for future challenges in this dynamic field.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <h3>Contact Me</h3>
+    <div class="contact-info">
+      <p><strong>Location:</strong> Delhi, India</p>
+      <p><strong>Mobile:</strong> 9312148763</p>
+      <p><strong>Email:</strong> <a href="mailto:aditirawat88260@gmail.com">aditirawat88260@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aditi-rawat-8bb073302" target="_blank">Aditi Rawat</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/aditirawat" target="_blank">aditirawat</a></p>
+    </div>
+    <button class="btn" onclick="window.location.href='mailto:aditirawat88260@gmail.com'">Get in Touch</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Aditi Rawat | Portfolio Website | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
